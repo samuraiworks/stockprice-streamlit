@@ -6,7 +6,7 @@ import streamlit as st
 st.title('米国株価可視化アプリ')
 
 st.sidebar.write("""
-# GANA株価
+# GANAM株価
 こちらは株価可視化ツールです。以下のオプションから表示日数を指定
 """)
 
@@ -17,7 +17,7 @@ st.sidebar.write("""
 days = st.sidebar.slider('日数', 1, 50, 20)
 
 st.write(f"""
-### 過去 **{days}日間** のGANA株価
+### 過去 **{days}日間** のGANAM株価
 """)
 
 
@@ -43,7 +43,7 @@ try:
 
     ymin, ymax = st.sidebar.slider(
         '範囲を指定してください。',
-        0.0, 3500.0, (0.0, 3500.0)
+        0.0, 1000.0, (0.0, 1000.0)
     )
 
     tickers = {
