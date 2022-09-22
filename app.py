@@ -54,7 +54,8 @@ try:
         'amazon': 'AMZN',
         'tesla': 'TSLA',
         'adobe': 'ADBE',
-        'nvidia': 'NVDA'
+        'nvidia': 'NVDA',
+        'facebook': 'META'
     }
 
     df = get_data(days, tickers)
