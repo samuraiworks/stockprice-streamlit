@@ -14,7 +14,7 @@ st.sidebar.write("""
 ## 表示日数選択
 """)
 
-days = st.sidebar.slider('日数', 1, 50, 20)
+days = st.sidebar.slider('日数', 1, 1825, 730)
 
 st.write(f"""
 ### 過去 **{days}日間** のGANAM株価
@@ -51,7 +51,10 @@ try:
         'google': 'GOOGL',
         'microsoft': 'MSFT',
         'netflix': 'NFLX',
-        'amazon': 'AMZN'
+        'amazon': 'AMZN',
+        'tesla': 'TSLA',
+        'adobe': 'ADBE',
+        'nvidia': 'NVDA'
     }
 
     df = get_data(days, tickers)
